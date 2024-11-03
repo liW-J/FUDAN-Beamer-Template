@@ -161,11 +161,11 @@
 \setbeamertemplate{title page}{%
   \vspace{12mm}
   \hspace{-12mm}% Pull back the box in an inelegant way - but it works!
-  \begin{beamercolorbox}[wd=0.9\textwidth,sep=10pt,leftskip=8mm]{title}%
+  \begin{beamercolorbox}[wd=0.9\textwidth,sep=1pt,leftskip=8mm]{title}%
     {\usebeamerfont{title}\inserttitle}
 
     {\usebeamerfont{subtitle}\insertsubtitle}
-
+    
     {\usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor}
 
     {\usebeamerfont{date}\usebeamercolor[fg]{date}\insertdate}
@@ -288,6 +288,8 @@
   \end{frame}
 \endgroup
 }
+
+\newcommand\email[1]{\href{mailto:#1}{\nolinkurl{#1}}}
 
 % MY CUSTOMIZATION
 \newcommand{\strtoc}{目录}
